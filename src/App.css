@@ -1,38 +1,146 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.makeStyles-title-3 {
+  flex-grow: .1;
+  display: flex;
+  justify-content: center;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.MuiToolbar-regular {
+  min-height: 65px !important;
 }
 
-.App-header {
-  background-color: #282c34;
+.MuiToolbar-regular a:-webkit-any-link {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.MuiToolbar-regular a {
+  background-color: #3F51B5;
+  box-shadow: 0 0px 3px darkred;
+  color: white;
+  padding: 1em 1.5em;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.MuiToolbar-regular a:hover {
+  background-color: #ce0606;
+}
+
+.MuiToolbar-regular a:active {
+  box-shadow: none;
+  top: 5px;
+}
+
+.MuiIconButton-root {
+  padding: 0 !important;
+}
+
+html {
+  background: url(components/bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  /* overflow: hidden; */
+}
+
+.container {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.menshoe {
+  text-align: center;
+  box-shadow: 0 0 5px grey;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.womenshoe {
+  text-align: center;
+  box-shadow: 0 0 5px grey;
+}
+
+.kidsshoe {
+  text-align: center;
+  box-shadow: 0 0 5px grey;
+}
+
+.womenshoe img {
+  border-radius: 50%;
+  background-color: inherit;
+}
+
+.menshoe img {
+  border-radius: 50%;
+  background-color: inherit;
+}
+
+.kidsshoe img {
+  border-radius: 50%;
+  background-color: inherit;
+}
+
+.menlink {
+  color: black;
+  padding: 1em 1.5em;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+
+.menlink:active {
+  box-shadow: none;
+  top: 5px;
+}
+
+.womenlink {
+  color: black;
+  padding: 1em 1.5em;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+
+.womenlink:active {
+  box-shadow: none;
+  top: 5px;
+}
+
+.kidslink {
+  color: black;
+  padding: 1em 1.5em;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+
+.kidslink:active {
+  box-shadow: none;
+  top: 5px;
+}
+
+.MuiPaper-rounded a:-webkit-any-link {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.MuiCardMedia-root {
+  background-size: contain !important;
 }
